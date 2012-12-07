@@ -53,13 +53,12 @@ img.logo {
   margin-top: -20px;
 }
 #header {
-  color: black;
+  color: white;
   min-height: 200px;
-  background-color: transparent; /* #3A678D; */
+  background-color: #3E3E47; /* #3A678D; */
   overflow: auto;
   position: relative;
   border-bottom: 1px black solid;
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,7 +85,7 @@ img.logo {
 .tabs-left > .nav-tabs > li.active a,
 .tabs-left > .nav-tabs > li.active a:hover {
   color: #FBFAF7;
-  background-color: black; /* #3A678D; */
+  background-color: #3E3E47; /* #3A678D; */
   border-color: transparent;
   font-weight: bold;
   min-width: 130px;
