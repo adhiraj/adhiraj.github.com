@@ -1,64 +1,186 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Adhiraj's Homepage by adhiraj</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>Adhiraj's Homepage</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/adhiraj.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        // Align the header with the content
+        // $('#header-content').css('margin-left', $('#content').css('margin-left'));
+      });
+    </script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Adhiraj's Homepage</h1>
-        <p class="header"></p>
-
-
-
-        <ul>
-          <li><a class="buttons github" href="https://github.com/adhiraj">GitHub Profile</a></li>
-        </ul>
-
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+    <div id="header">
+      <div id="header-content">
+        <img id="profile-pic" src="img/profile-pic.jpg">
+        <div class="span5">
+          <h1>adhiraj somani</h1>
+          <h4>student &middot; freelancer</h4><br>
+          School of Computing<br>
+          National University of Singapore<br>
+          </p>
+        </div>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
+    <div class="tabbable tabs-left" id="content">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#about" data-toggle="tab">About</a></li>
+        <li><a href="#education" data-toggle="tab">Education</a></li>
+        <li><a href="#workexp" data-toggle="tab">Work Experience</a></li>
+        <li><a href="#projects" data-toggle="tab">College Projects</a></li>
+      </ul>
+
+      <div class="tab-content">
+
+        <div class="tab-pane active" id="about">
+          <div class="running-text">
+            <p>Hi there!</p>
+            <p>I'm a final year student of Computer Science at National University of Singapore. My academic interests are in artificial intelligence and software engineering. My non-academic interests are primarily in sports and travel.</p>
+            <p>I freelance ocassionally when I get time from school. Hit me up if you have something interesting for me!</p>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="education">
+          <div class="item">
+            <div class="item-header">
+              <!--a href="http://www.nus.edu.sg/"><img class="logo borderless" src="img/nus-logo-blue.gif" id="nus-logo"></a><br /-->
+              <span class="item-name">National University of Singapore</span><br />
+              <span class="item-desc">B.Comp. (Hons.), Computer Science<br />SIA-NOL Undergraduate Scholar<br />GPA 4.8 / 5</span>
+            </div>
+            <div class="item-date">Singapore<br />2009-2013</div>
+            <div class="item-content"><p>My final year project is based on the theory and applications of <a href="http://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process">Partially observable Markov decision processes</a>.</p></div>
+          </div>
+          <div class="item">
+            <div class="item-header">
+              <!--a href="http://www.kth.se/en"><img class="logo" src="img/kth-logo.jpeg"></a><br /-->
+              <span class="item-name">KTH | Kungliga Tekniska hogskolan</span><br />
+              <span class="item-desc">NUS Student Exchange Program Awardee</span>
+            </div>
+            <div class="item-date">
+              Stockholm, Sweden<br />
+              Aug-Dec 2011
+            </div>
+            <div class="item-content">
+              <p>Extra-curricular: <em>Jujutsu</em> is Japanese martial art and a method of close combat whose philosophy is to manipulate the opponent's force against himself rather than confront it with one's own force. <a href="http://www.yawara.se/">Akademiska Jujutsuforeningen</a> is probably the only dojo in Sweden that teaches Hontai Yoshin Ryu, the ancient Japanese school of the art, and I took classes for a few months while I was there.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-header">
+              <!--a href="http://www.donboscoparkcircus.org/"><img class="logo borderless" src="img/db-emblem.jpeg"></a><br /-->
+              <span class="item-name">Don Bosco High School, Park Circus</span><br />
+              <span class="item-desc">Dean's Valedictorian Award<br />Silver Medal, International Olympiad in Informatics, 2009<br />President, Computing Club</span>
+            </div>
+            <div class="item-date">
+              Kolkata, India<br />
+              2009
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="workexp">
+          <a href="http://www.facebook.com/"><img class="logo" src="img/fb-logo.png" style="max-height: 50px;"></a>
+          <div class="item">
+            <div class="item-header">
+              <span class="item-name">Software Engineering Intern, Seattle, USA</span>
+            </div>
+            <div class="item-date">
+              May '12 - Jul '12
+            </div>
+            <div class="item-content">
+              <p>My main project was to work on machine learning algorithms for place search. This involved coming up with a better discretization technique, manually tuning models based on user behavior, and increasing the automation of the training pipeline to make deployment and testing easier. I also worked on improving the Build Verification Test Tool. [C++,&nbsp;Python]</p>
+            </div>
+          </div>
+          <div class="item following">
+            <div class="item-header">
+              <span class="item-name">Software Engineering Intern, Palo Alto, USA</span>
+            </div>
+            <div class="item-date">
+              May '11 - Jul '11
+            </div>
+            <div class="item-content">
+              <p>I built a scalable and fault tolerant version of a business critical ETL system achieving much better error rates and speed. Also made improvements to the job scheduler used for internal data processing tasks. [Python,&nbsp;Java]</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-header">
+              <a href="http://startup.org.sg/"><img class="logo borderless" src="img/sas-logo.jpg"></a><br />
+              <span class="item-name">IT Director, Startup @ Singapore</span>
+            </div>
+            <div class="item-date">
+              Aug '10 - May '11
+            </div>
+            <div class="item-content">
+              <p>A year long on-going project where I was incharge of maintaining the <a href="http://competition.startup.org.sg/">online competition portal</a> that handled registrations, business-plan submissions, the judging system and results dissemination for over 1000 participants from 20 countries. [PHP]</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-header">
+              <a href="http://www.ioi2010.org/"><img class="logo borderless" src="img/ioi-2010-logo.jpeg"></a><br />
+              <span class="item-name">Student Coach, International Olympiad in Informatics Training Camp, India</span>
+            </div>
+            <div class="item-date">
+              Jun '10
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="projects">
+          <p>Here's a list of interesting projects I've done while at school, although some of them exist only in our hearts now, reminding us of the days of yore.</p>
+          
+          <div class="item">
+            <div class="item-header">
+              <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Multi-label Naive-Bayes Text Classifier</a></span>
+            </div>
+            <div class="item-date">Oct-Nov '12</div>
+            <div class="item-content">Here at NUS we have a community called <a href="http://nushackers.org/">NUS Hackers</a>, a group of people interested in <strike>breaking</strike> building and learning new things. We maintain a website similar to hackernews for us to share articles about content with timeless value &ndash; algorithms, programming paradigms, research, culture etc., as opposed to things that are just <em>trending</em>, like most articles on hackernews. When we submit articles to the site, we can tag them with categories, and my idea was to recommend tags automatically based on a naive Bayes model trained on a dataset of 100K user-tagged links submitted on <a href="http://delicious.com/">delicious</a>. It will remain an academic exercise because delicious has an API for tag suggestions that leverages its network and user tags and performs far better than any naive Bayes model would be able to in practice. The process of crawling and cleaning thousands of documents and tweaking the model was so interesting that I've documented it in my blog.</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-name">iMenus</span>
+              <div class="item-desc">Digital menu systems for restaurants</div>
+            </div>
+            <div class="item-date">Mar-May '11</div>
+            <div class="item-content">An iPad app we made for an epic course (CS3217) at NUS. Basically it was a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>. Unfortunately we college kids were too busy doing our college-y stuff and the team disintegrated after the semester so we left it at that.</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-name">Huff &amp; Puff</span>
+              <div class="item-desc">Angry Birds Reinvented</div>
+            </div>
+            <div class="item-date">Jan-Feb '11</div>
+            <div class="item-content">Huff &amp; Puff is a cute little Windows Mobile game that I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs. We coded most of the game from scratch, including the physics engine.</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-name">Crazy Paddles</span>
+              <div class="item-desc">Wii game</div>
+            </div>
+            <div class="item-date">Aug-Nov '12</div>
+            <div class="item-content">I did this in a user-interface class. It's a 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one sitting pillion carries a gun and shoots baloons in the sky for bonus points. Everything gesture controlled, super cool. Done in Flash and ActionScript.</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-name">Sportup!</span>
+              <div class="item-desc">Matchmaking for people looking for sports players at any time</div>
+            </div>
+            <div class="item-date">Mar-Apr '12</div>
+            <div class="item-content">So a tennis playing friend of ours was facing a problem &ndash; often he wanted to play tennis but couldn't immediately find a partner either because his near and dear ones all don't play tennis, or the times they're free don't match, or there was no good way of discovering random strangers interested in playing at that time too. Thus was born Sportup! Just key in your location and see who's playing what in your vicinity, and who's looking for people to play with. You can also schedule future games and friend people on the site (of course, how can a web app be complete without social?). Done using the epic Ruby on Rails framework.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
