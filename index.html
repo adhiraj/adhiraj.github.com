@@ -9,12 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/adhiraj.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script>
-      $(function() {
-        // Align the header with the content
-        // $('#header-content').css('margin-left', $('#content').css('margin-left'));
-      });
-    </script>
   </head>
   <body>
     <div id="header">
@@ -27,6 +21,10 @@
           National University of Singapore<br>
           </p>
         </div>
+        <!--ul class="nav">
+          <li><a href="http://adhiraj3216.blogspot.sg/">BLOG</a></li>
+          <li><a href="mailto:adhirajsomani@gmail.com">EMAIL</a></li>
+        </ul-->
       </div>
     </div>
 
@@ -36,6 +34,7 @@
         <li><a href="#education" data-toggle="tab">Education</a></li>
         <li><a href="#workexp" data-toggle="tab">Work Experience</a></li>
         <li><a href="#projects" data-toggle="tab">College Projects</a></li>
+        <li><a href="#other" data-toggle="tab">Other</a></li>
       </ul>
 
       <div class="tab-content">
@@ -68,15 +67,12 @@
               Stockholm, Sweden<br />
               Aug-Dec 2011
             </div>
-            <div class="item-content">
-              <p>Extra-curricular: <em>Jujutsu</em> is Japanese martial art and a method of close combat whose philosophy is to manipulate the opponent's force against himself rather than confront it with one's own force. <a href="http://www.yawara.se/">Akademiska Jujutsuforeningen</a> is probably the only dojo in Sweden that teaches Hontai Yoshin Ryu, the ancient Japanese school of the art, and I took classes for a few months while I was there.</p>
-            </div>
           </div>
           <div class="item">
             <div class="item-header">
               <!--a href="http://www.donboscoparkcircus.org/"><img class="logo borderless" src="img/db-emblem.jpeg"></a><br /-->
               <span class="item-name">Don Bosco High School, Park Circus</span><br />
-              <span class="item-desc">Dean's Valedictorian Award<br />Silver Medal, International Olympiad in Informatics, 2009<br />President, Computing Club</span>
+              <span class="item-desc">Valedictorian Award<br />Silver Medal, International Olympiad in Informatics, 2009<br />President, Computing Club</span>
             </div>
             <div class="item-date">
               Kolkata, India<br />
@@ -133,14 +129,14 @@
         </div>
 
         <div class="tab-pane" id="projects">
-          <p>Here's a list of interesting projects I've done while at school, although some of them exist only in our hearts now, reminding us of the days of yore.</p>
+          <p>A list of interesting projects I've done while at school, though some of them exist only in our hearts now reminding us of the days of yore.</p>
           
           <div class="item">
             <div class="item-header">
               <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Multi-label Naive-Bayes Text Classifier</a></span>
             </div>
             <div class="item-date">Oct-Nov '12</div>
-            <div class="item-content">Here at NUS we have a community called <a href="http://nushackers.org/">NUS Hackers</a>, a group of people interested in <strike>breaking</strike> building and learning new things. We maintain a website similar to hackernews for us to share articles about content with timeless value &ndash; algorithms, programming paradigms, research, culture etc., as opposed to things that are just <em>trending</em>, like most articles on hackernews. When we submit articles to the site, we can tag them with categories, and my idea was to recommend tags automatically based on a naive Bayes model trained on a dataset of 100K user-tagged links submitted on <a href="http://delicious.com/">delicious</a>. It will remain an academic exercise because delicious has an API for tag suggestions that leverages its network and user tags and performs far better than any naive Bayes model would be able to in practice. The process of crawling and cleaning thousands of documents and tweaking the model was so interesting that I've documented it in my blog.</div>
+            <div class="item-content">A text classifier that takes a link and makes tag recommendations. Trained on a dataset of 100K user-tagged links on <a href="http://delicious.com/">delicious</a>. I wrote a post on the process of crawling and cleaning the documents, and tweaking the model to perform acceptably.</div>
           </div>
 
           <div class="item">
@@ -149,25 +145,25 @@
               <div class="item-desc">Digital menu systems for restaurants</div>
             </div>
             <div class="item-date">Mar-May '11</div>
-            <div class="item-content">An iPad app we made for an epic course (CS3217) at NUS. Basically it was a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>. Unfortunately we college kids were too busy doing our college-y stuff and the team disintegrated after the semester so we left it at that.</div>
+            <div class="item-content">An iPad app we made for a course CS3217 at NUS. iMenus is a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
           </div>
 
           <div class="item">
             <div class="item-header">
               <span class="item-name">Huff &amp; Puff</span>
-              <div class="item-desc">Angry Birds Reinvented</div>
+              <div class="item-desc">Angry Birds reinvented</div>
             </div>
             <div class="item-date">Jan-Feb '11</div>
-            <div class="item-content">Huff &amp; Puff is a cute little Windows Mobile game that I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs. We coded most of the game from scratch, including the physics engine.</div>
+            <div class="item-content">Huff &amp; Puff is a cute little Windows Mobile game that I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs.</div>
           </div>
 
           <div class="item">
             <div class="item-header">
               <span class="item-name">Crazy Paddles</span>
-              <div class="item-desc">Wii game</div>
+              <div class="item-desc">Wiiiiiiiiiiiiiii</div>
             </div>
             <div class="item-date">Aug-Nov '12</div>
-            <div class="item-content">I did this in a user-interface class. It's a 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one sitting pillion carries a gun and shoots baloons in the sky for bonus points. Everything gesture controlled, super cool. Done in Flash and ActionScript.</div>
+            <div class="item-content">A 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one sitting pillion carries a gun and shoots helium baloons for bonus points. Everything gesture controlled, done in Flash and ActionScript.</div>
           </div>
 
           <div class="item">
@@ -178,6 +174,13 @@
             <div class="item-date">Mar-Apr '12</div>
             <div class="item-content">So a tennis playing friend of ours was facing a problem &ndash; often he wanted to play tennis but couldn't immediately find a partner either because his near and dear ones all don't play tennis, or the times they're free don't match, or there was no good way of discovering random strangers interested in playing at that time too. Thus was born Sportup! Just key in your location and see who's playing what in your vicinity, and who's looking for people to play with. You can also schedule future games and friend people on the site (of course, how can a web app be complete without social?). Done using the epic Ruby on Rails framework.</div>
           </div>
+        </div>
+
+        <div class="tab-pane" id="other">
+          <h4>Blog</h4>
+          <p>I write <a href="http://adhiraj3216.blogspot.sg/">here</a>.</p>
+          <h4>Email</h4>
+          <p>adhirajsomani [at] gmail [dot] com</p>
         </div>
 
       </div>

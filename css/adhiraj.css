@@ -110,3 +110,7 @@ img.logo {
   border-left: 1px solid black; /* #3A678D; */
   padding-left: 20px;
 }
+ul.nav {
+  float: right;
+  vertical-align: bottom;
+}
