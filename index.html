@@ -9,48 +9,38 @@
     <link rel="stylesheet" type="text/css" href="css/adhiraj.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/imgSizer.js"></script>
   </head>
   <body>
-    <div id="header">
-      <div id="header-content">
-        <img id="profile-pic" src="img/profile-pic.jpg">
-        <div class="span5">
-          <h1>adhiraj somani</h1>
+    <div class="row" style="height: 100%;">
+      <div class="span4" id="header" style="position:relative;">
+        <img id="profile-pic" src="img/bird.png">
+        <div id="header-main">
+          <h2>adhiraj somani</h2>
           <h4>student &middot; freelancer</h4><br>
-          School of Computing<br>
-          National University of Singapore<br>
-          </p>
         </div>
-        <!--ul class="nav">
-          <li><a href="http://adhiraj3216.blogspot.sg/">BLOG</a></li>
-          <li><a href="mailto:adhirajsomani@gmail.com">EMAIL</a></li>
-        </ul-->
+        <div class="tabbable tabs-left">
+          <ul class="nav nav-tabs" style="float: right; text-align: right;">
+            <li class="active"><a href="#about" data-toggle="tab">About</a></li>
+            <!--li><a href="#education" data-toggle="tab">Education</a></li-->
+            <li><a href="#workexp" data-toggle="tab">Work Experience</a></li>
+            <li><a href="#projects" data-toggle="tab">Projects</a></li>
+            <li><a href="#other" data-toggle="tab">Other</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="tabbable tabs-left" id="content">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-        <li><a href="#education" data-toggle="tab">Education</a></li>
-        <li><a href="#workexp" data-toggle="tab">Work Experience</a></li>
-        <li><a href="#projects" data-toggle="tab">College Projects</a></li>
-        <li><a href="#other" data-toggle="tab">Other</a></li>
-      </ul>
-
-      <div class="tab-content">
+      <div class="tab-content span8">
 
         <div class="tab-pane active" id="about">
-          <div class="running-text">
-            <p>Hi there!</p>
-            <p>I'm a final year student of Computer Science at National University of Singapore. My academic interests are in artificial intelligence and software engineering. My non-academic interests are primarily in sports and travel.</p>
-            <p>I freelance ocassionally when I get time from school. Hit me up if you have something interesting for me!</p>
-          </div>
+          <h4>Hi there!</h4>
+          <p>I'm a final year student of Computer Science at National University of Singapore. My academic interests are in artificial intelligence and software engineering. My non-academic interests are primarily in sports and travel.</p>
+          <p>I freelance ocassionally when I get time from school.</p>
         </div>
 
-        <div class="tab-pane" id="education">
+        <!--div class="tab-pane" id="education">
           <div class="item">
             <div class="item-header">
-              <!--a href="http://www.nus.edu.sg/"><img class="logo borderless" src="img/nus-logo-blue.gif" id="nus-logo"></a><br /-->
               <span class="item-name">National University of Singapore</span><br />
               <span class="item-desc">B.Comp. (Hons.), Computer Science<br />SIA-NOL Undergraduate Scholar<br />GPA 4.8 / 5</span>
             </div>
@@ -59,7 +49,6 @@
           </div>
           <div class="item">
             <div class="item-header">
-              <!--a href="http://www.kth.se/en"><img class="logo" src="img/kth-logo.jpeg"></a><br /-->
               <span class="item-name">KTH | Kungliga Tekniska hogskolan</span><br />
               <span class="item-desc">NUS Student Exchange Program Awardee</span>
             </div>
@@ -70,7 +59,6 @@
           </div>
           <div class="item">
             <div class="item-header">
-              <!--a href="http://www.donboscoparkcircus.org/"><img class="logo borderless" src="img/db-emblem.jpeg"></a><br /-->
               <span class="item-name">Don Bosco High School, Park Circus</span><br />
               <span class="item-desc">Valedictorian Award<br />Silver Medal, International Olympiad in Informatics, 2009<br />President, Computing Club</span>
             </div>
@@ -79,7 +67,7 @@
               2009
             </div>
           </div>
-        </div>
+        </div-->
 
         <div class="tab-pane" id="workexp">
           <a href="http://www.facebook.com/"><img class="logo" src="img/fb-logo.png" style="max-height: 50px;"></a>
@@ -91,7 +79,7 @@
               May '12 - Jul '12
             </div>
             <div class="item-content">
-              <p>My main project was to work on machine learning algorithms for place search. This involved coming up with a better discretization technique, manually tuning models based on user behavior, and increasing the automation of the training pipeline to make deployment and testing easier. I also worked on improving the Build Verification Test Tool. [C++,&nbsp;Python]</p>
+              <p>My main project was to work on machine learning algorithms for place search. This involved a better discretization technique, manual tuning of models based on user behavior, and increasing the automation of the training pipeline to make deployment and testing easier. I also worked on improving the Build Verification Test Tool. [C++,&nbsp;Python]</p>
             </div>
           </div>
           <div class="item following">
@@ -129,14 +117,14 @@
         </div>
 
         <div class="tab-pane" id="projects">
-          <p>A list of interesting projects I've done while at school, though some of them exist only in our hearts now reminding us of the days of yore.</p>
+          <p>A list of interesting projects I've done while at school.</p><br>
           
           <div class="item">
             <div class="item-header">
               <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Multi-label Naive-Bayes Text Classifier</a></span>
             </div>
             <div class="item-date">Oct-Nov '12</div>
-            <div class="item-content">A text classifier that takes a link and makes tag recommendations. Trained on a dataset of 100K user-tagged links on <a href="http://delicious.com/">delicious</a>. I wrote a post on the process of crawling and cleaning the documents, and tweaking the model to perform acceptably.</div>
+            <div class="item-content">A text classifier that takes a URL and makes tag recommendations. Trained on a dataset of 100K user-tagged links on <a href="http://delicious.com/">delicious</a>.</div>
           </div>
 
           <div class="item">
@@ -145,7 +133,7 @@
               <div class="item-desc">Digital menu systems for restaurants</div>
             </div>
             <div class="item-date">Mar-May '11</div>
-            <div class="item-content">An iPad app we made for a course CS3217 at NUS. iMenus is a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
+            <div class="item-content">iMenus is a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
           </div>
 
           <div class="item">
@@ -154,7 +142,7 @@
               <div class="item-desc">Angry Birds reinvented</div>
             </div>
             <div class="item-date">Jan-Feb '11</div>
-            <div class="item-content">Huff &amp; Puff is a cute little Windows Mobile game that I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs.</div>
+            <div class="item-content">A cute little Windows Mobile game I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs.</div>
           </div>
 
           <div class="item">
@@ -163,7 +151,7 @@
               <div class="item-desc">Wiiiiiiiiiiiiiii</div>
             </div>
             <div class="item-date">Aug-Nov '12</div>
-            <div class="item-content">A 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one sitting pillion carries a gun and shoots helium baloons for bonus points. Everything gesture controlled, done in Flash and ActionScript.</div>
+            <div class="item-content">A 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one behind shoots helium baloons for bonus points. Everything gesture controlled, done in Flash and ActionScript.</div>
           </div>
 
           <div class="item">
@@ -172,18 +160,23 @@
               <div class="item-desc">Matchmaking for people looking for sports players at any time</div>
             </div>
             <div class="item-date">Mar-Apr '12</div>
-            <div class="item-content">So a tennis playing friend of ours was facing a problem &ndash; often he wanted to play tennis but couldn't immediately find a partner either because his near and dear ones all don't play tennis, or the times they're free don't match, or there was no good way of discovering random strangers interested in playing at that time too. Thus was born Sportup! Just key in your location and see who's playing what in your vicinity, and who's looking for people to play with. You can also schedule future games and friend people on the site (of course, how can a web app be complete without social?). Done using the epic Ruby on Rails framework.</div>
+            <div class="item-content">A friend of ours was facing a problem &ndash; sometimes he wanted to play tennis but couldn't immediately find a partner either because his friends didn't play tennis, their schedules conflicted, or there was no good way of discovering random people interested in playing at the same time. Thus was born Sportup! Just key in your location and see who's playing what in your vicinity, or who's looking for people to play with. You can also schedule future games and friend people on the site (of course, how can a web app be complete without social?). Done using the epic Ruby on Rails framework.</div>
           </div>
         </div>
 
         <div class="tab-pane" id="other">
-          <h4>Blog</h4>
+          <h3>Blog</h3>
           <p>I write <a href="http://adhiraj3216.blogspot.sg/">here</a>.</p>
-          <h4>Email</h4>
+          <h3>Email</h3>
           <p>adhirajsomani [at] gmail [dot] com</p>
+          <h3>Resume</h3>
+          <p><a href="resume.pdf">Here</a> is my one-page resume.</p>
+          <h3>Research</h3>
+          <p>My final year project is based on the theory and applications of <a href="http://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process">Partially observable Markov decision processes</a>.</p>
         </div>
 
       </div>
+    </div>
     </div>
   </body>
 </html>

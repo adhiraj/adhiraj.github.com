@@ -1,6 +1,10 @@
+html {
+  height: 100%;
+}
 body {
   background-color: #FBFAF7;
   font-family: "open sans", arial, sans-serif;
+  height: 100%;
 }
 ul {
   margin-left: 15px;
@@ -53,39 +57,22 @@ img.logo {
   margin-top: -20px;
 }
 #header {
-  color: white;
-  min-height: 200px;
-  background-color: #3E3E47; /* #3A678D; */
+  color: #FBFAF7;
+  background-color: #3E3E47;
   overflow: auto;
   position: relative;
   border-bottom: 1px black solid;
-  margin-left: auto;
-  margin-right: auto;
 }
-#header > p {
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-}
-#header-content {
-  margin-top: 20px;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: auto;
+#header-main {
+  text-align: center;
 }
 #profile-pic {
-  height: 150px;
-  float: left;
-  padding: 10px;
-  border: 1px black solid;
-  padding: 0px;
-  margin: 10px;
+  max-width: 100%;
 }
 .tabs-left > .nav-tabs > li.active a,
 .tabs-left > .nav-tabs > li.active a:hover {
-  color: #FBFAF7;
-  background-color: #3E3E47; /* #3A678D; */
+  color: #3E3E47;
+  background-color: #FBFAF7;
   border-color: transparent;
   font-weight: bold;
   min-width: 130px;
@@ -96,21 +83,15 @@ img.logo {
   font-weight: bold;
 }
 .tabs-left > .nav-tabs > li > a {
-  color: #555555;
-}
-#worldmap {
-  float: right;
-  margin-left: 20px;
+  color: #FBFAF7;
 }
 .tabs-left > .nav-tabs {
   margin-right: -1px;
   border-right: 1px solid black; /* #3A678D; */
 }
-.tab-pane {
-  border-left: 1px solid black; /* #3A678D; */
-  padding-left: 20px;
+.tab-content {
+  padding-top: 10px;
 }
-ul.nav {
-  float: right;
-  vertical-align: bottom;
+.tab-pane {
+  padding: 10px;
 }
