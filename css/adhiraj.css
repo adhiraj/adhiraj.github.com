@@ -78,7 +78,10 @@ img.logo {
   background-color: #FBFAF7;
   border-color: transparent;
   font-weight: bold;
-  min-width: 130px;
+}
+.tabs-left > .nav-tabs > li {
+  float: right;
+  clear: both;
 }
 .tabs-left > .nav-tabs > li a:hover {
   background-color: transparent;
@@ -87,6 +90,9 @@ img.logo {
 }
 .tabs-left > .nav-tabs > li > a {
   color: #FBFAF7;
+  min-width: 0;
+  padding-left: 16px; /* padding-right +4 to soften the imbalance caused by
+                         rounded corners */
 }
 .tabs-left > .nav-tabs {
   margin-right: 0px;
