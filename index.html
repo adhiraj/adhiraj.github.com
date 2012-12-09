@@ -10,19 +10,24 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/imgSizer.js"></script>
+    <script>
+      $(function() {
+        $('.tabs-left > .nav-tabs > li > a').click(function(){
+          $('body').scrollTop(0);
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="row" style="height: 100%;">
-      <div class="span4" id="header" style="position:relative;">
+      <div id="header" class="sidebar-nav-fixed">
         <img id="profile-pic" src="img/bird.png">
-        <div id="header-main">
+        <div id="sidebar-main">
           <h2>adhiraj somani</h2>
           <h4>student &middot; freelancer</h4><br>
         </div>
         <div class="tabbable tabs-left">
-          <ul class="nav nav-tabs" style="float: right; text-align: right;">
+          <ul class="nav nav-tabs">
             <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-            <!--li><a href="#education" data-toggle="tab">Education</a></li-->
             <li><a href="#workexp" data-toggle="tab">Work Experience</a></li>
             <li><a href="#projects" data-toggle="tab">Projects</a></li>
             <li><a href="#other" data-toggle="tab">Other</a></li>
@@ -30,10 +35,10 @@
         </div>
       </div>
 
-      <div class="tab-content span8">
+      <div class="tab-content">
 
         <div class="tab-pane active" id="about">
-          <h4>Hi there!</h4>
+          <p><strong>Hi there!</strong></p>
           <p>I'm a final year student of Computer Science at National University of Singapore. My academic interests are in artificial intelligence and software engineering. My non-academic interests are primarily in sports and travel.</p>
           <p>I freelance ocassionally when I get time from school.</p>
         </div>
@@ -70,7 +75,7 @@
         </div-->
 
         <div class="tab-pane" id="workexp">
-          <a href="http://www.facebook.com/"><img class="logo" src="img/fb-logo.png" style="max-height: 50px;"></a>
+          <a href="http://www.facebook.com/"><img id="fb-logo" class="logo" src="img/fb-logo.png"></a>
           <div class="item">
             <div class="item-header">
               <span class="item-name">Software Engineering Intern, Seattle, USA</span>
@@ -117,7 +122,7 @@
         </div>
 
         <div class="tab-pane" id="projects">
-          <p>A list of interesting projects I've done while at school.</p><br>
+          <p>A list of interesting projects I've done while at school.</p>
           
           <div class="item">
             <div class="item-header">
@@ -165,7 +170,7 @@
         </div>
 
         <div class="tab-pane" id="other">
-          <h3>Blog</h3>
+          <h3 style="margin-top: 0;">Blog</h3>
           <p>I write <a href="http://adhiraj3216.blogspot.sg/">here</a>.</p>
           <h3>Email</h3>
           <p>adhirajsomani [at] gmail [dot] com</p>
@@ -176,7 +181,6 @@
         </div>
 
       </div>
-    </div>
-    </div>
+
   </body>
 </html>
