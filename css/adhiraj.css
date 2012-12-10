@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 body {
   background-color: #FBFAF7;
   font-family: "open sans", arial, sans-serif;
@@ -15,7 +18,6 @@ body {
   float: left;
   clear: both;
   margin-bottom: 5px;
-  width: 75%;
 }
 .item-header > .item-desc {
   font-style: italic;
@@ -33,10 +35,8 @@ body {
 }
 .item-content {
   clear: both;
-  width: 75%;
   margin-top: 10px;
   margin-bottom: 0;
-  text-align: justify;
 }
 .item.following {
   margin-top: -20px;
@@ -53,18 +53,23 @@ img.logo {
 
 /* Sidebar */
 
-.sidebar-nav-fixed {
+.sidebar-nav {
   color: #FBFAF7;
   background-color: #3E3E47;
-  width: 300px;
   min-height: 100%;
-  overflow: auto;
-  position: fixed;
+  overflow: hidden;
+  /*position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 0;*/
 }
 #sidebar-main {
+  padding: 10px;
   text-align: center;
+}
+#profile-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Navigation tabs */
@@ -100,10 +105,9 @@ img.logo {
 
 
 /* Main content */
-.tab-content {
-  margin-left: 300px;
-  width: 600px;  
-}
 .tab-pane {
-  padding: 20px;
+  margin-top: 20px;
+}
+.span9 {
+  margin-left: 20px!important;
 }

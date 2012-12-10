@@ -3,9 +3,11 @@
   <head>
     <title>Adhiraj's Homepage</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/adhiraj.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -29,7 +31,10 @@
     </script>
   </head>
   <body>
-      <div id="header" class="sidebar-nav-fixed">
+    <div class="container-fluid">
+    <div class="row-fluid">
+    <div class="span3">
+      <div id="header" class="sidebar-nav">
         <img id="profile-pic" src="img/bird-small.png">
         <div id="sidebar-main">
           <h2>adhiraj somani</h2>
@@ -44,7 +49,9 @@
           </ul>
         </div>
       </div>
+    </div>
 
+    <div class="span9">
       <div class="tab-content">
 
         <div class="tab-pane active" id="about">
@@ -53,45 +60,11 @@
           <p>I freelance ocassionally when I get time from school.</p>
         </div>
 
-        <!--div class="tab-pane" id="education">
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">National University of Singapore</span><br />
-              <span class="item-desc">B.Comp. (Hons.), Computer Science<br />SIA-NOL Undergraduate Scholar<br />GPA 4.8 / 5</span>
-            </div>
-            <div class="item-date">Singapore<br />2009-2013</div>
-            <div class="item-content"><p>My final year project is based on the theory and applications of <a href="http://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process">Partially observable Markov decision processes</a>.</p></div>
-          </div>
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">KTH | Kungliga Tekniska hogskolan</span><br />
-              <span class="item-desc">NUS Student Exchange Program Awardee</span>
-            </div>
-            <div class="item-date">
-              Stockholm, Sweden<br />
-              Aug-Dec 2011
-            </div>
-          </div>
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">Don Bosco High School, Park Circus</span><br />
-              <span class="item-desc">Valedictorian Award<br />Silver Medal, International Olympiad in Informatics, 2009<br />President, Computing Club</span>
-            </div>
-            <div class="item-date">
-              Kolkata, India<br />
-              2009
-            </div>
-          </div>
-        </div-->
-
         <div class="tab-pane" id="workexp">
           <a href="http://www.facebook.com/"><img id="fb-logo" class="logo" src="img/fb-logo.png"></a>
           <div class="item">
             <div class="item-header">
-              <span class="item-name">Software Engineering Intern, Seattle, USA</span>
-            </div>
-            <div class="item-date">
-              May '12 - Jul '12
+              <span class="item-name">Software Engineering Intern (May&nbsp;-&nbsp;Jul&nbsp;'12)</span>
             </div>
             <div class="item-content">
               <p>My main project was to work on machine learning algorithms for place search. This involved a better discretization technique, manual tuning of models based on user behavior, and increasing the automation of the training pipeline to make deployment and testing easier. I also worked on improving the Build Verification Test Tool. [C++,&nbsp;Python]</p>
@@ -99,10 +72,7 @@
           </div>
           <div class="item following">
             <div class="item-header">
-              <span class="item-name">Software Engineering Intern, Palo Alto, USA</span>
-            </div>
-            <div class="item-date">
-              May '11 - Jul '11
+              <span class="item-name">Software Engineering Intern (May&nbsp;-&nbsp;Jul&nbsp;'11)</span>
             </div>
             <div class="item-content">
               <p>I built a scalable and fault tolerant version of a business critical ETL system achieving much better error rates and speed. Also made improvements to the job scheduler used for internal data processing tasks. [Python,&nbsp;Java]</p>
@@ -111,10 +81,7 @@
           <div class="item">
             <div class="item-header">
               <a href="http://startup.org.sg/"><img class="logo borderless" src="img/sas-logo.jpg"></a><br />
-              <span class="item-name">IT Director, Startup @ Singapore</span>
-            </div>
-            <div class="item-date">
-              Aug '10 - May '11
+              <span class="item-name">IT Director, Startup @ Singapore (Aug&nbsp;'10&nbsp;-&nbsp;May&nbsp;'11)</span>
             </div>
             <div class="item-content">
               <p>A year long on-going project where I was incharge of maintaining the <a href="http://competition.startup.org.sg/">online competition portal</a> that handled registrations, business-plan submissions, the judging system and results dissemination for over 1000 participants from 20 countries. [PHP]</p>
@@ -123,58 +90,51 @@
           <div class="item">
             <div class="item-header">
               <a href="http://www.ioi2010.org/"><img class="logo borderless" src="img/ioi-2010-logo.jpeg"></a><br />
-              <span class="item-name">Student Coach, International Olympiad in Informatics Training Camp, India</span>
-            </div>
-            <div class="item-date">
-              Jun '10
+              <span class="item-name">Student Coach, IOI Training Camp, India (Jun&nbsp;'10)</span>
             </div>
           </div>
         </div>
 
         <div class="tab-pane" id="projects">
-          <p>A list of interesting projects I've done while at school.</p>
+          <p>A list of interesting projects I've done while at school.</p><br />
           
           <div class="item">
             <div class="item-header">
-              <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Multi-label Naive-Bayes Text Classifier</a></span>
-            </div>
-            <div class="item-date">Oct-Nov '12</div>
+              <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Tag Recommender</a></span>
+              <div class="item-desc">Multi-label Naive-Bayes Text Classifier (Oct&nbsp;-&nbsp;Nov&nbsp;'12)</div>
             <div class="item-content">A text classifier that takes a URL and makes tag recommendations. Trained on a dataset of 100K user-tagged links on <a href="http://delicious.com/">delicious</a>.</div>
+            </div>
           </div>
 
           <div class="item">
             <div class="item-header">
               <span class="item-name">iMenus</span>
-              <div class="item-desc">Digital menu systems for restaurants</div>
+              <div class="item-desc">Digital menu systems for restaurants (Mar&nbsp;-&nbsp;May&nbsp;'11)</div>
             </div>
-            <div class="item-date">Mar-May '11</div>
             <div class="item-content">iMenus is a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
           </div>
 
           <div class="item">
             <div class="item-header">
               <span class="item-name">Huff &amp; Puff</span>
-              <div class="item-desc">Angry Birds reinvented</div>
+              <div class="item-desc">Angry Birds reinvented (Jan&nbsp;-&nbsp;Feb&nbsp;'11)</div>
             </div>
-            <div class="item-date">Jan-Feb '11</div>
             <div class="item-content">A cute little Windows Mobile game I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs.</div>
           </div>
 
           <div class="item">
             <div class="item-header">
               <span class="item-name">Crazy Paddles</span>
-              <div class="item-desc">Wiiiiiiiiiiiiiii</div>
+              <div class="item-desc">Wiiiiiiiiiiiiiii (Aug&nbsp;-&nbsp;Nov 10)</div>
             </div>
-            <div class="item-date">Aug-Nov '12</div>
             <div class="item-content">A 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one behind shoots helium baloons for bonus points. Everything gesture controlled, done in Flash and ActionScript.</div>
           </div>
 
           <div class="item">
             <div class="item-header">
               <span class="item-name">Sportup!</span>
-              <div class="item-desc">Matchmaking for people looking for sports players at any time</div>
+              <div class="item-desc">Matchmaking for people looking for sports players at any time (Mar&nbsp;-&nbsp;Apr&nbsp;'10)</div>
             </div>
-            <div class="item-date">Mar-Apr '12</div>
             <div class="item-content">A friend of ours was facing a problem &ndash; sometimes he wanted to play tennis but couldn't immediately find a partner either because his friends didn't play tennis, their schedules conflicted, or there was no good way of discovering random people interested in playing at the same time. Thus was born Sportup! Just key in your location and see who's playing what in your vicinity, or who's looking for people to play with. You can also schedule future games and friend people on the site (of course, how can a web app be complete without social?). Done using the epic Ruby on Rails framework.</div>
           </div>
         </div>
@@ -191,6 +151,10 @@
         </div>
 
       </div>
+
+    </div>
+    </div>
+    </div>
 
   </body>
 </html>
