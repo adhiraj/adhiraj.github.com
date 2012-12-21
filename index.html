@@ -31,10 +31,10 @@
     </script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="ccontainer-fluid">
     <div class="row-fluid">
     <div class="span3">
-      <div id="header" class="sidebar-nav">
+      <div class="sb-fixed sidebar-nav" id="header">
         <img id="profile-pic" src="img/bird-small.png">
         <div id="sidebar-main">
           <h2>adhiraj somani</h2>
@@ -43,7 +43,7 @@
         <div class="tabbable tabs-left">
           <ul class="nav nav-tabs">
             <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-            <li><a href="#workexp" data-toggle="tab">Work Experience</a></li>
+            <li><a href="#workexp" data-toggle="tab">Work xp</a></li>
             <li><a href="#projects" data-toggle="tab">Projects</a></li>
             <li><a href="#other" data-toggle="tab">Other</a></li>
           </ul>
@@ -54,28 +54,28 @@
     <div class="span9">
       <div class="tab-content">
 
-        <div class="tab-pane active" id="about">
+        <div class="tab-pane fade in active" id="about">
           <p><strong>Hi there!</strong></p>
           <p>I'm a final year student of Computer Science at National University of Singapore. My academic interests are in artificial intelligence and software engineering. My non-academic interests are primarily in sports and travel.</p>
           <p>I freelance ocassionally when I get time from school.</p>
         </div>
 
-        <div class="tab-pane" id="workexp">
+        <div class="tab-pane fade in" id="workexp">
           <a href="http://www.facebook.com/"><img id="fb-logo" class="logo" src="img/fb-logo.png"></a>
           <div class="item">
             <div class="item-header">
               <span class="item-name">Software Engineering Intern (May&nbsp;-&nbsp;Jul&nbsp;'12)</span>
             </div>
             <div class="item-content">
-              <p>My main project was to work on machine learning algorithms for place search. This involved a better discretization technique, manual tuning of models based on user behavior, and increasing the automation of the training pipeline to make deployment and testing easier. I also worked on improving the Build Verification Test Tool. [C++,&nbsp;Python]</p>
+              <p>Using machine learning to improve place search.</p>
             </div>
           </div>
-          <div class="item following">
+          <div class="item">
             <div class="item-header">
               <span class="item-name">Software Engineering Intern (May&nbsp;-&nbsp;Jul&nbsp;'11)</span>
             </div>
             <div class="item-content">
-              <p>I built a scalable and fault tolerant version of a business critical ETL system achieving much better error rates and speed. Also made improvements to the job scheduler used for internal data processing tasks. [Python,&nbsp;Java]</p>
+              <p>Building a scalable and fault tolerant ETL system.</p>
             </div>
           </div>
           <div class="item">
@@ -84,7 +84,7 @@
               <span class="item-name">IT Director, Startup @ Singapore (Aug&nbsp;'10&nbsp;-&nbsp;May&nbsp;'11)</span>
             </div>
             <div class="item-content">
-              <p>A year long on-going project where I was incharge of maintaining the <a href="http://competition.startup.org.sg/">online competition portal</a> that handled registrations, business-plan submissions, the judging system and results dissemination for over 1000 participants from 20 countries. [PHP]</p>
+              <p>Building the <a href="http://competition.startup.org.sg/">online competition portal</a>.</p>
             </div>
           </div>
           <div class="item">
@@ -92,17 +92,18 @@
               <a href="http://www.ioi2010.org/"><img class="logo borderless" src="img/ioi-2010-logo.jpeg"></a><br />
               <span class="item-name">Student Coach, IOI Training Camp, India (Jun&nbsp;'10)</span>
             </div>
+            <div class="item-content">
+              <p>Creating problem sets to select the student delegation.</p>
+            </div>
           </div>
         </div>
 
-        <div class="tab-pane" id="projects">
-          <p>A list of interesting projects I've done while at school.</p><br />
-          
+        <div class="tab-pane fade in" id="projects">
           <div class="item">
             <div class="item-header">
               <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Tag Recommender</a></span>
               <div class="item-desc">Multi-label Naive-Bayes Text Classifier (Oct&nbsp;-&nbsp;Nov&nbsp;'12)</div>
-            <div class="item-content">A text classifier that takes a URL and makes tag recommendations. Trained on a dataset of 100K user-tagged links on <a href="http://delicious.com/">delicious</a>.</div>
+            <div class="item-content">A text classifier that takes a URL and makes tag recommendations. Trained on a dataset of 100K links from <a href="http://delicious.com/">delicious</a>.</div>
             </div>
           </div>
 
@@ -111,7 +112,7 @@
               <span class="item-name">iMenus</span>
               <div class="item-desc">Digital menu systems for restaurants (Mar&nbsp;-&nbsp;May&nbsp;'11)</div>
             </div>
-            <div class="item-content">iMenus is a digital menu system for restaurants complete with POS integration. Customers order on iPads placed on the tables, and stewards/chefs can see the orders pouring in on their kitchen system. After a meal, customers can call for the bill that would be sent to the POS system. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
+            <div class="item-content">A digital menu system for restaurants complete with POS integration. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
           </div>
 
           <div class="item">
@@ -119,7 +120,7 @@
               <span class="item-name">Huff &amp; Puff</span>
               <div class="item-desc">Angry Birds reinvented (Jan&nbsp;-&nbsp;Feb&nbsp;'11)</div>
             </div>
-            <div class="item-content">A cute little Windows Mobile game I reinvented for the iPad. It's a hybrid between the kindergarten story The Three Little Pigs and Rovio's Angry Birds. You create game levels by placing blocks of varying strengths and sizes and constructing structures to protect the pigs. Then you take on the role of the evil wolf that can puff in many different ways and try to kill the pigs.</div>
+            <div class="item-content">A cute little Windows Mobile game I reinvented for the iPad. It's a hybrid between The Three Little Pigs Angry Birds.</div>
           </div>
 
           <div class="item">
@@ -127,7 +128,7 @@
               <span class="item-name">Crazy Paddles</span>
               <div class="item-desc">Wiiiiiiiiiiiiiii (Aug&nbsp;-&nbsp;Nov 10)</div>
             </div>
-            <div class="item-content">A 2-player Wii game with both players sitting on a boat, the front one negotiating turbulent waters while the one behind shoots helium baloons for bonus points. Everything gesture controlled, done in Flash and ActionScript.</div>
+            <div class="item-content">A 2-player Wii game with guns, boats, balloons and a hell lot of fun.</div>
           </div>
 
           <div class="item">
@@ -135,11 +136,11 @@
               <span class="item-name">Sportup!</span>
               <div class="item-desc">Matchmaking for people looking for sports players at any time (Mar&nbsp;-&nbsp;Apr&nbsp;'10)</div>
             </div>
-            <div class="item-content">A friend of ours was facing a problem &ndash; sometimes he wanted to play tennis but couldn't immediately find a partner either because his friends didn't play tennis, their schedules conflicted, or there was no good way of discovering random people interested in playing at the same time. Thus was born Sportup! Just key in your location and see who's playing what in your vicinity, or who's looking for people to play with. You can also schedule future games and friend people on the site (of course, how can a web app be complete without social?). Done using the epic Ruby on Rails framework.</div>
+            <div class="item-content">A friend of ours was facing a problem &ndash; sometimes he wanted to play tennis but couldn't immediately find a partner either because his friends didn't play tennis, their schedules conflicted, or there was no good way of discovering random people interested in playing at the same time. Thus was born Sportup! Key in your location and see who's playing what in your vicinity, or who's looking for people to play with. Schedule future games and friend people on the site (of course, how can a web app be complete without social?).</div>
           </div>
         </div>
 
-        <div class="tab-pane" id="other">
+        <div class="tab-pane fade in" id="other">
           <h3 style="margin-top: 0;">Blog</h3>
           <p>I write <a href="http://adhiraj3216.blogspot.sg/">here</a>.</p>
           <h3>Email</h3>
