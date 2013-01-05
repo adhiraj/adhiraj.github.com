@@ -13,12 +13,29 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/imgSizer.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
     <script>
       $(function() {
-        $('.tabs-left > .nav-tabs > li > a').click(function(){
-          // $('body').scrollTop(0);
+        window.location.hash = window.location.hash || '/projects'
+
+        // Function to activate the tab
+        function activateTab() {
+            var activeTab = $('[href=' + window.location.hash.replace('/', '') + ']');
+            activeTab && activeTab.tab('show');
+        }
+
+        // Trigger when the page loads
+        activateTab();
+
+        // Trigger when the hash changes (forward / back)
+        $(window).hashchange(function(e) {
+            activateTab();
         });
+
+        // Change hash when a tab changes
+        $('a[data-toggle="tab"], a[data-toggle="pill"]').on('shown', function () {
+            window.location.hash = '/' + $(this).attr('href').replace('#', '');
+        }); 
       });
     </script>
     <script type="text/javascript">
@@ -34,17 +51,17 @@
   </head>
   <body>
     <div class="row-fluid">
-    <div class="span4">
-      <div class="sb-fixed sidebar-nav" id="header">
+    <div class="span3">
+      <div class="sb-fixed">
         <img id="profile-pic" src="img/bird-small.png">
         <div id="name-main"><h2>adhiraj somani</h2></div>
         <div id="sidebar-main">
           <h4>Hi there!</h4>
-          <p>I study Computer Science at NUS, and freelance as a developer in my spare time.</p>
+          <p>I'm Adhiraj. I study Computer Science at NUS, and freelance as a developer in my spare time.</p>
         </div><br><br>
         <div class="tabbable tabs-left">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#projects" data-toggle="tab">PROJECTS</a></li>
+            <li><a href="#projects" data-toggle="tab">PROJECTS</a></li>
             <li><a href="#workexp" data-toggle="tab">WORK XP</a></li>
             <li><a href="#other" data-toggle="tab">OTHER</a></li>
           </ul>
@@ -52,10 +69,10 @@
       </div>
     </div>
 
-    <div class="span8">
+    <div class="span9">
       <div class="tab-content">
 
-       <div class="tab-pane fade in active" id="projects">
+       <div class="tab-pane" id="projects">
 
           <div class="item">
             <h3>Tag Recommender</h2>
@@ -106,7 +123,7 @@
 
         </div>
 
-        <div class="tab-pane fade" id="workexp">
+        <div class="tab-pane" id="workexp">
           <a href="http://www.facebook.com/"><img id="fb-logo" class="logo" src="img/fb-logo.png"></a>
           <div class="item">
             <div class="item-header">
@@ -144,7 +161,7 @@
           </div>
         </div>
 
-        <div class="tab-pane fade" id="other">
+        <div class="tab-pane" id="other">
           <h3 style="margin-top: 0;">Blog</h3>
           <p>I write <a href="http://adhiraj3216.blogspot.sg/">here</a>.</p>
           <h3>Email</h3>
