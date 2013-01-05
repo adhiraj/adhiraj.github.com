@@ -2,12 +2,11 @@ html {
   height: 100%;
 }
 body {
-  background-color: #FBFAF7;
+  background-color: #FFFEFB;
   font-family: "open sans", arial, sans-serif;
+  font-size: 16px;
   height: 100%;
   position: relative;
-}
-.container-fluid {
 }
 @media (min-width: 768px) {
   .sb-fixed {
@@ -17,13 +16,19 @@ body {
   }
 }
 p {
-  line-height: 150%;
+  line-height: 1.6em;
+  margin: 1em 0;
 }
 h3 {
   font-family: serif;
 }
-.authorCite {
-  text-align: right;
+hr { 
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #3E3E47;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /* Items */
@@ -67,8 +72,12 @@ img.logo {
 
 /* Sidebar */
 
+#name-main {
+  margin: 20px auto;
+  text-align: center;
+}
 .sidebar-nav {
-  color: #FBFAF7;
+  color: #FFFEFB;
   background-color: #3E3E47;
   min-height: 100%;
   overflow: hidden;
@@ -77,7 +86,7 @@ img.logo {
   bottom: 0;*/
 }
 #sidebar-main {
-  padding: 10px;
+  padding: 10px 20px;
   text-align: center;
 }
 #profile-pic {
@@ -91,7 +100,7 @@ img.logo {
 .tabs-left > .nav-tabs > li.active a,
 .tabs-left > .nav-tabs > li.active a:hover {
   color: #3E3E47;
-  background-color: #FBFAF7;
+  background-color: #FFFEFB;
   border-color: transparent;
   font-weight: bold;
 }
@@ -105,10 +114,11 @@ img.logo {
   font-weight: bold;
 }
 .tabs-left > .nav-tabs > li > a {
-  color: #FBFAF7;
+  color: #FFFEFB;
   min-width: 0;
   padding-left: 16px; /* padding-right +4 to soften the imbalance caused by
                          rounded corners */
+  margin-bottom: 15px;
 }
 .tabs-left > .nav-tabs {
   margin-right: 0px;
@@ -122,8 +132,15 @@ img.logo {
 .tab-pane {
   margin-top: 20px;
 }
+.tab-content {
+  margin-right: 2.564102564102564%;
+}
 .span9 {
   margin-left: 0!important;
   padding-left: 20px;
   padding-right: 20px;
+}
+img.thumbnail {
+  width: 300px;
+  height: 300px;
 }

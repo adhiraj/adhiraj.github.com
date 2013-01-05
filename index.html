@@ -7,15 +7,17 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="css/adhiraj.css">
+    <link rel="stylesheet" href="css/lightbox.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/imgSizer.js"></script>
     <script>
       $(function() {
         $('.tabs-left > .nav-tabs > li > a').click(function(){
-          $('body').scrollTop(0);
+          // $('body').scrollTop(0);
         });
       });
     </script>
@@ -32,35 +34,76 @@
   </head>
   <body>
     <div class="row-fluid">
-    <div class="span3">
+    <div class="span4">
       <div class="sb-fixed sidebar-nav" id="header">
         <img id="profile-pic" src="img/bird-small.png">
+        <div id="name-main"><h2>adhiraj somani</h2></div>
         <div id="sidebar-main">
-          <h2>adhiraj somani</h2>
-          <h4>student &middot; freelancer</h4><br>
-        </div>
+          <h4>Hi there!</h4>
+          <p>I study Computer Science at NUS, and freelance as a developer in my spare time.</p>
+        </div><br><br>
         <div class="tabbable tabs-left">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-            <li><a href="#workexp" data-toggle="tab">Work xp</a></li>
-            <li><a href="#projects" data-toggle="tab">Projects</a></li>
-            <li><a href="#other" data-toggle="tab">Other</a></li>
+            <li class="active"><a href="#projects" data-toggle="tab">PROJECTS</a></li>
+            <li><a href="#workexp" data-toggle="tab">WORK XP</a></li>
+            <li><a href="#other" data-toggle="tab">OTHER</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="span9">
+    <div class="span8">
       <div class="tab-content">
 
-        <div class="tab-pane fade in active" id="about">
-          <!--blockquote style="float: right;">
-            Twenty years down the line, you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.
-            <div class="authorCite">&mdash; Mark Twain</div>
-          </blockquote!-->
-          <p><strong>Hi there!</strong></p>
-          <p>I study Computer Science at National University of Singapore. My academic interests are in artificial intelligence and software engineering. My non-academic interests are primarily in sports and travel.</p>
-          <p>I freelance ocassionally when I get time from school.</p>
+       <div class="tab-pane fade in active" id="projects">
+
+          <div class="item">
+            <h3>Tag Recommender</h2>
+            <p>A multi-label naive-Bayes text classifier that takes a URL and makes tag recommendations based on the page content. Trained on a dataset of 100K links from <a href="http://delicious.com/">delicious</a>.</p>
+            <p>The screenshot below shows links scraped from the first page of <a href="http://news.ycombinator.com/">HackerNews</a>, auto-tagged with the 3 most relevant tags.</p>
+            <p><a href="img/tag-recommender.png" rel="lightbox"><img class="img-polaroid" width="300" height="300" src="img/tag-recommender.png"></a></p>
+            <p><a href="http://github.com/adhiraj/naivebayes">Source code</a></p>
+          </div><hr>
+
+          <div class="item">
+            <h3>iMenus</h3>
+            <p>An iPad digital menu system for restaurants complete with POS integration.</p>
+            <p>
+              <a href="img/imenus/imenus-1.png" rel="lightbox[imenus]"><img class="img-polaroid" width="300" height="300" src="img/imenus/imenus-1.png"></a>
+              <a href="img/imenus/imenus-2.png" rel="lightbox[imenus]"></a>
+              <a href="img/imenus/imenus-3.png" rel="lightbox[imenus]"></a>
+              <a href="img/imenus/imenus-4.png" rel="lightbox[imenus]"></a>
+              <a href="img/imenus/imenus-5.png" rel="lightbox[imenus]"></a>
+            </p>
+          </div><hr>
+
+          <div class="item">
+            <h3>Huff &amp; Puff</h3>
+            <p>A cute little Windows Mobile game I rehashed for the iPad. It's a hybrid between The Three Little Pigs and Angry Birds.</p>
+            <p>Original game video below.</p>
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/MGYaWJBtNZM" frameborder="0" allowfullscreen></iframe>
+          </div><hr>
+
+          <div class="item">
+            <h3>Crazy Paddles</h3>
+            <p>A 2-player Wii game with guns, boats, balloons and a hell lot of fun.</p>
+            <p>
+              <a href="img/crazy-paddles/crazy-paddles-1.png" rel="lightbox[crazy-paddles]"><img class="img-polaroid" width="300" height="300" src="img/crazy-paddles/crazy-paddles-1.png"></a>
+              <a href="img/crazy-paddles/crazy-paddles-2.png" rel="lightbox[crazy-paddles]"></a>
+              <a href="img/crazy-paddles/crazy-paddles-3.png" rel="lightbox[crazy-paddles]"></a>
+              <a href="img/crazy-paddles/crazy-paddles-4.png" rel="lightbox[crazy-paddles]"></a>
+            </p>
+          </div><hr>
+
+          <div class="item">
+            <h3>Sportup!</h3>
+            <p>A friend of ours was facing a problem &ndash; sometimes he wanted to play tennis but couldn't immediately find a partner either because his friends didn't play tennis, or their schedules conflicted, or there was no good way of discovering random people interested in playing at the same time. Thus was born Sportup! Key in your location and see who's playing what in your vicinity, or who's looking for people to play with. Schedule future games, and friend people on the site (of course, how can a web app be complete without social?).</p>
+            <p>
+              <a href="img/sportup/sports1.jpg" rel="lightbox[sportup]"><img src="img/sportup/sports1.jpg" class="img-polaroid" width="300" height="300"></a>
+              <a href="img/sportup/sports2.jpg" rel="lightbox[sportup]"></a>
+            </p>
+          </div>
+
         </div>
 
         <div class="tab-pane fade" id="workexp">
@@ -70,7 +113,7 @@
               <span class="item-name">Software Engineering Intern (May&nbsp;-&nbsp;Jul&nbsp;'12)</span>
             </div>
             <div class="item-content">
-              <p>Improving place search using machine learning.</p>
+              <p>Improved place search using machine learning.</p>
             </div>
           </div>
           <div class="item">
@@ -78,7 +121,7 @@
               <span class="item-name">Software Engineering Intern (May&nbsp;-&nbsp;Jul&nbsp;'11)</span>
             </div>
             <div class="item-content">
-              <p>Building a scalable and fault tolerant ETL system.</p>
+              <p>Built a scalable and fault tolerant Extract-Transform-Load system.</p>
             </div>
           </div>
           <div class="item">
@@ -87,7 +130,7 @@
               <span class="item-name">IT Director, Startup @ Singapore (Aug&nbsp;'10&nbsp;-&nbsp;May&nbsp;'11)</span>
             </div>
             <div class="item-content">
-              <p>Building the <a href="http://competition.startup.org.sg/">online competition portal</a>.</p>
+              <p>In charge of the <a href="http://competition.startup.org.sg/">online competition portal</a>.</p>
             </div>
           </div>
           <div class="item">
@@ -96,50 +139,8 @@
               <span class="item-name">Student Coach, IOI Training Camp, India (Jun&nbsp;'10)</span>
             </div>
             <div class="item-content">
-              <p>Creating problem sets to select the student delegation.</p>
+              <p>Created problem sets to select the student delegation to IOI 2010.</p>
             </div>
-          </div>
-        </div>
-
-        <div class="tab-pane fade" id="projects">
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name"><a href="http://github.com/adhiraj/naivebayes">Tag Recommender</a></span>
-              <div class="item-desc">Multi-label Na&iuml;ve-Bayes Text Classifier (Oct&nbsp;-&nbsp;Nov&nbsp;'12)</div>
-            <div class="item-content">A text classifier that takes a URL and makes tag recommendations. Trained on a dataset of 100K links from <a href="http://delicious.com/">delicious</a>.</div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">iMenus</span>
-              <div class="item-desc">Digital menus for restaurants (Mar&nbsp;-&nbsp;May&nbsp;'11)</div>
-            </div>
-            <div class="item-content">An iPad digital menu system for restaurants complete with POS integration. A lot like <a href="http://www.poslavu.com/">POS Lavu</a>.</div>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">Huff &amp; Puff</span>
-              <div class="item-desc">Angry Birds reinvented (Jan&nbsp;-&nbsp;Feb&nbsp;'11)</div>
-            </div>
-            <div class="item-content">A cute little Windows Mobile game I reinvented for the iPad. It's a hybrid between The Three Little Pigs and Angry Birds.</div>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">Crazy Paddles</span>
-              <div class="item-desc">Wiiiiiiiiiiiiiii (Aug&nbsp;-&nbsp;Nov 10)</div>
-            </div>
-            <div class="item-content">A 2-player Wii game with guns, boats, balloons and a hell lot of fun.</div>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <span class="item-name">Sportup!</span>
-              <div class="item-desc">Matchmaking for people wanting to play a sport (Mar&nbsp;-&nbsp;Apr&nbsp;'10)</div>
-            </div>
-            <div class="item-content">A friend of ours was facing a problem &ndash; sometimes he wanted to play tennis but couldn't immediately find a partner either because his friends didn't play tennis, or their schedules conflicted, or there was no good way of discovering random people interested in playing at the same time. Thus was born Sportup! Key in your location and see who's playing what in your vicinity, or who's looking for people to play with. Schedule future games, and friend people on the site (of course, how can a web app be complete without social?).</div>
           </div>
         </div>
 
@@ -149,7 +150,7 @@
           <h3>Email</h3>
           <p>adhirajsomani [at] gmail [dot] com</p>
           <h3>Resume</h3>
-          <p><a href="http://sg.linkedin.com/in/adhirajsomani/">Linkedin</a> does a great job, but if you want a one page pdf, please email me.</p>
+          <p><a href="http://www.linkedin.com/profile/view?id=164090264">Linkedin</a> does a great job, but if you want a one page pdf, please email me.</p>
           <h3>Research</h3>
           <p>My final year project is based on the theory and applications of <a href="http://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process">Partially observable Markov decision processes</a>.</p>
         </div>
