@@ -34,7 +34,6 @@ hr {
 /* Items */
 
 .item {
-  overflow: auto;
   margin-bottom: 20px;
 }
 .item-header > .item-desc {
