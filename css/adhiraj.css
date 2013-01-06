@@ -68,11 +68,13 @@ img.logo {
     position: fixed;
     left: 0;
     width: inherit;
-    color: #FFFEFB;
-    background-color: #3E3E47;
-    height: 100%;
-    overflow: auto;
   }
+}
+#sidebar {
+  color: #FFFEFB;
+  background-color: #3E3E47;
+  height: 100%;
+  overflow: auto;
 }
 #name-main {
   margin: 20px auto;
