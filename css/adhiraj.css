@@ -8,13 +8,15 @@ body {
   font-size: 16px;
   height: 100%;
   position: relative;
+  color: #3E3E47;
 }
 p {
   line-height: 1.6em;
-  margin: 1em 0;
+  margin: 0.9em 0;
 }
 h3 {
   font-family: serif;
+  margin-bottom: 5px;
 }
 hr { 
   display: block;
@@ -27,35 +29,23 @@ hr {
 
 /* Items */
 .item {
-  margin-bottom: 20px;
-}
-.item-header > .item-desc {
-  font-style: italic;
-  clear: both;
+  margin-bottom: 35px;
+  margin-top: 10px;
 }
 .item-name {
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-family: serif;
-}
-.item-date {
-  font-weight: bold;
-  float: right;
-  text-align: right;
-  width: 25%;
 }
 .item-content {
   clear: both;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 0;
-}
-.item.following {
-  margin-top: -20px;
 }
 
 /* Images */
 img.logo {
-  max-height: 75px;
+  max-height: 65px;
   margin-bottom: 10px;
 }
 #fb-logo {
@@ -128,15 +118,12 @@ img.logo {
 .tab-content {
   margin-right: 2.564102564102564%;
 }
-img.thumbnail {
-  width: 300px;
-  height: 300px;
+img.proj_thumbnail {
+  width: 250px;
 }
 @media (min-width: 1200px) {
   .row-fluid [class*="span"] {
     margin-left: 2.16%;
   }
 }
-
-
-}
+.
